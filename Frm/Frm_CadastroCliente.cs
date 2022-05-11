@@ -41,7 +41,6 @@ namespace LocadoraSA.Frm
             try
             {
                 //mudei hein
-                //aqui tbm
                 this.funcionario = new Clientes();
                 this.funcionario.CPF = Txt_Cpf.Text;
                 this.funcionario.Nome = Txt_Nome.Text;
