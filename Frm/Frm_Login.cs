@@ -4,6 +4,7 @@ using MySql.Data.MySqlClient;
 namespace LocadoraSA
 
 {
+    //so falta mais uma parte
     public partial class Frm_Login : Form
     {
         public Frm_Login()
