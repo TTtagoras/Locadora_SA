@@ -50,6 +50,7 @@
             this.Btn_LoginCliente.TabIndex = 0;
             this.Btn_LoginCliente.Text = "Logar como cliente";
             this.Btn_LoginCliente.UseVisualStyleBackColor = true;
+            this.Btn_LoginCliente.Click += new System.EventHandler(this.Btn_LoginCliente_Click);
             // 
             // Lbl_Cpf
             // 
@@ -60,7 +61,7 @@
             this.Lbl_Cpf.Size = new System.Drawing.Size(38, 21);
             this.Lbl_Cpf.TabIndex = 22;
             this.Lbl_Cpf.Text = "CPF";
-            this.Lbl_Cpf.Click += new System.EventHandler(this.Lbl_Cpf_Click);
+            
             // 
             // Txt_Cpf
             // 
@@ -79,7 +80,6 @@
             this.Lbl_Senha.Size = new System.Drawing.Size(57, 21);
             this.Lbl_Senha.TabIndex = 24;
             this.Lbl_Senha.Text = "Senha";
-            this.Lbl_Senha.Click += new System.EventHandler(this.Lbl_Senha_Click);
             // 
             // Txt_senha
             // 
@@ -97,6 +97,7 @@
             this.Btn_LoginFuncionario.TabIndex = 26;
             this.Btn_LoginFuncionario.Text = "Logar como funcionario";
             this.Btn_LoginFuncionario.UseVisualStyleBackColor = true;
+            this.Btn_LoginFuncionario.Click += new System.EventHandler(this.Btn_LoginFuncionario_Click);
             // 
             // Btn_Adiministrador
             // 
@@ -106,6 +107,7 @@
             this.Btn_Adiministrador.TabIndex = 27;
             this.Btn_Adiministrador.Text = "Logar como ADM";
             this.Btn_Adiministrador.UseVisualStyleBackColor = true;
+            this.Btn_Adiministrador.Click += new System.EventHandler(this.Btn_Adiministrador_Click);
             // 
             // Btn_CadastroCliente
             // 
