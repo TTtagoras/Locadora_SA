@@ -40,8 +40,7 @@ namespace LocadoraSA.Frm
         {
             try
             {
-                // oi teste do git
-                //aiufhwoirhgiqbef8
+                //lrhuiqerfygqfq
                 this.funcionario = new Clientes();
                 this.funcionario.CPF = Txt_Cpf.Text;
                 this.funcionario.Nome = Txt_Nome.Text;
