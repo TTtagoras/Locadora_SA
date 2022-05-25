@@ -202,7 +202,7 @@ namespace LocadoraSA.DataBase;
         public void CadastrarCliente()
         {
             this.cliente.NonQuery(
-                "INSERT INTO `locadorasa`.`veiculos`(`Tamanho`, `Categoria`, `Cilindradas`, `GPS`, `TelaLcd`, `Fabricante`, `Modelo`, `Ano`, `PainelDigital`, `Cambio`, `Combustivel`, `DatadeFabricação`, `ValorCompra`, `Placa`) VALUES('" + Tamanho + "', '" + Categoria + "', '" + Cilindradas + "', '" + GPS + "', '" + TelaLcd + "', '" + Fabricante + "', '" + Modelo + "', '" + Ano + "', '" + PainelDigital + "', '" + Cambio + "', '" + Combustivel + "', '" + DatadeFabricação + "', '" + ValorCompra + "', '" + Placa + "');"
+                "INSERT INTO `locadorasa`.`veiculos`(`Tamanho`, `Categoria`, `Cilindradas`, `GPS`, `TelaLcd`, `Fabricante`, `Modelo`, `Ano`, `PainelDigital`, `Cambio`, `Combustivel`, `DatadeFabricação`, `ValorCompra`, `Placa`, `locado`) VALUES('" + Tamanho + "', '" + Categoria + "', '" + Cilindradas + "', '" + GPS + "', '" + TelaLcd + "', '" + Fabricante + "', '" + Modelo + "', '" + Ano + "', '" + PainelDigital + "', '" + Cambio + "', '" + Combustivel + "', '" + DatadeFabricação + "', '" + ValorCompra + "', '" + Placa + "', 'N');"
             );
         }
 

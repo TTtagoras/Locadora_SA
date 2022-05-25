@@ -16,5 +16,10 @@ namespace LocadoraSA.Frm
         {
             InitializeComponent();
         }
+
+        private void Lbl_Tamanho_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
