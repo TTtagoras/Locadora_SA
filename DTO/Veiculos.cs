@@ -216,7 +216,7 @@ namespace LocadoraSA.DataBase;
 
         public MySqlDataReader ListarClientes()
         {
-            return this.cliente.Query("Select * from veiculos order by CPF asc");
+            return this.cliente.Query("Select * from `locadorasa`.`veiculos` order by Placa asc");
         }
 
         public MySqlDataReader ListarClientes(String filtro)
@@ -225,7 +225,7 @@ namespace LocadoraSA.DataBase;
             {
                 return ListarClientes();
             }
-            return this.cliente.Query("Select * from veiculos where CPF LIKE '%" + filtro + "%' order by CPF asc");
+            return this.cliente.Query("Select * from `locadorasa`.`veiculos` where Placa LIKE '%" + filtro + "%' order by Placa asc");
         }
 
         public Veiculos(string Tamanho, string Categoria, string Cilindradas, string GPS, string TelaLcd, string Fabricante, string Modelo, string Ano, string PainelDigital, string Cambio, string Combustivel, string DatadeFabricação, string ValorCompra, string Placa)

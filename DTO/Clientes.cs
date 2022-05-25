@@ -154,7 +154,7 @@ namespace LocadoraSA.DTO
 
         public MySqlDataReader ListarClientes()
         {
-            return this.cliente.Query("Select * from clientes order by CPF asc");
+            return this.cliente.Query("Select * from `locadorasa`.`clientes` order by CPF asc");
         }
 
         public MySqlDataReader ListarClientes(String filtro)
@@ -163,7 +163,7 @@ namespace LocadoraSA.DTO
             {
                 return ListarClientes();
             }
-            return this.cliente.Query("Select * from clientes where CPF LIKE '%" + filtro + "%' order by CPF asc");
+            return this.cliente.Query("Select * from `locadorasa`.`clientes` where CPF LIKE '%" + filtro + "%' order by CPF asc");
         }
 
         public Clientes(string CPF, string Nome, string Sobrenome, string Senha, string Endereco, string Telefone, string Email, string CNH, string CEP)

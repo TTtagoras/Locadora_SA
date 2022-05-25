@@ -18,6 +18,7 @@ namespace LocadoraSA.Frm
 
         public Frm_cadastroCarros(string Tamanho, string Categoria, string Cilindradas, string GPS, string TelaLcd, string Fabricante, string Modelo, string Ano, string PainelDigital, string Cambio, string Combustivel, string DatadeFabricação, string ValorCompra, string Placa)
         {
+            InitializeComponent();
             Txt_Tamanho.Text = Tamanho;
             Txt_Categoria.Text = Categoria;
             Txt_Cilindradas.Text = Cilindradas;
@@ -34,9 +35,22 @@ namespace LocadoraSA.Frm
             Txt_Placa.Text = Placa;
         }
 
-        public Frm_cadastroCarros()
+        public void Clear()
         {
-            InitializeComponent();
+            Txt_Tamanho.Text = "";
+            Txt_Categoria.Text = "";
+            Txt_Cilindradas.Text = "";
+            Txt_GPS.Text = "";
+            Txt_LCD.Text = "";
+            Txt_Fabricante.Text = "";
+            Txt_Modelo.Text = "";
+            Txt_Ano.Text = "";
+            Txt_PainelDigital.Text = "";
+            Txt_Cambio.Text = "";
+            Txt_Combustivel.Text = "";
+            Txt_DatadeFabricação.Text = "";
+            Txt_ValorCompra.Text = "";
+            Txt_Placa.Text = "";
         }
 
         public void salvarRegistro()
@@ -193,6 +207,8 @@ namespace LocadoraSA.Frm
             //lista.listarClientes();
             salvarRegistro();
         }
+
+        
     }
 }
 

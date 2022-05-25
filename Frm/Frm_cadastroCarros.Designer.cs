@@ -100,7 +100,7 @@
             this.Txt_GPS.PlaceholderText = "Digite se tem GPS ou não";
             this.Txt_GPS.Size = new System.Drawing.Size(151, 20);
             this.Txt_GPS.TabIndex = 82;
-            this.Txt_GPS.UseSystemPasswordChar = true;
+            //this.Txt_GPS.TextChanged += new System.EventHandler(this.Txt_GPS_TextChanged);
             // 
             // Btn_Voltar
             // 
@@ -366,7 +366,7 @@
             this.Txt_LCD.Size = new System.Drawing.Size(151, 20);
             this.Txt_LCD.TabIndex = 110;
             // 
-            // Frm_cadastroVeiculos
+            // Frm_cadastroCarros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -402,7 +402,7 @@
             this.Controls.Add(this.Txt_Categoria);
             this.Controls.Add(this.Lbl_Cilindradas);
             this.Controls.Add(this.Txt_Cilindradas);
-            this.Name = "Frm_cadastroVeiculos";
+            this.Name = "Frm_cadastroCarros";
             this.Text = "Cadastrar Veiculos";
             this.Load += new System.EventHandler(this.Frm_cadastroVeiculos_Load);
             this.ResumeLayout(false);

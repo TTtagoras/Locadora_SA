@@ -58,7 +58,7 @@ namespace LocadoraSA
                     MySqlDataReader logado = comandoSQL.ExecuteReader();
                     if (logado.HasRows)
                     {
-                        Frm_CadastroCliente cadastrar = new Frm_CadastroCliente();
+                        Frm_PrincipalClientes cadastrar = new Frm_PrincipalClientes();
                         cadastrar.Show();
                     }
                     else
@@ -97,7 +97,7 @@ namespace LocadoraSA
                     MySqlDataReader logado = comandoSQL.ExecuteReader();
                     if (logado.HasRows)
                     {
-                        Frm_CadastroFuncionario cadastrar = new Frm_CadastroFuncionario();
+                       Frm_PrincipalFuncionario cadastrar = new Frm_PrincipalFuncionario();
                         cadastrar.Show();
                     }
                     else
@@ -136,7 +136,7 @@ namespace LocadoraSA
                     MySqlDataReader logado = comandoSQL.ExecuteReader();
                     if (logado.HasRows)
                     {
-                        Frm_CadastroAdiministrador cadastrar = new Frm_CadastroAdiministrador();
+                        Frm_PrincipalAdm cadastrar = new Frm_PrincipalAdm();
                         cadastrar.Show();
                     }
                     else

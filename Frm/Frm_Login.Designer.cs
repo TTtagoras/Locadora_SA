@@ -37,7 +37,6 @@
             this.Btn_LoginFuncionario = new System.Windows.Forms.Button();
             this.Btn_Adiministrador = new System.Windows.Forms.Button();
             this.Btn_CadastroCliente = new System.Windows.Forms.Button();
-            this.Btn_CadastroFuncionario = new System.Windows.Forms.Button();
             this.Pcb_Olho = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Pcb_Olho)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +60,6 @@
             this.Lbl_Cpf.Size = new System.Drawing.Size(38, 21);
             this.Lbl_Cpf.TabIndex = 22;
             this.Lbl_Cpf.Text = "CPF";
-            
             // 
             // Txt_Cpf
             // 
@@ -111,23 +109,13 @@
             // 
             // Btn_CadastroCliente
             // 
-            this.Btn_CadastroCliente.Location = new System.Drawing.Point(46, 227);
+            this.Btn_CadastroCliente.Location = new System.Drawing.Point(106, 228);
             this.Btn_CadastroCliente.Name = "Btn_CadastroCliente";
             this.Btn_CadastroCliente.Size = new System.Drawing.Size(114, 46);
             this.Btn_CadastroCliente.TabIndex = 28;
             this.Btn_CadastroCliente.Text = "Fazer cadastro como cliente";
             this.Btn_CadastroCliente.UseVisualStyleBackColor = true;
             this.Btn_CadastroCliente.Click += new System.EventHandler(this.Btn_CadastroCliente_Click);
-            // 
-            // Btn_CadastroFuncionario
-            // 
-            this.Btn_CadastroFuncionario.Location = new System.Drawing.Point(166, 227);
-            this.Btn_CadastroFuncionario.Name = "Btn_CadastroFuncionario";
-            this.Btn_CadastroFuncionario.Size = new System.Drawing.Size(114, 46);
-            this.Btn_CadastroFuncionario.TabIndex = 29;
-            this.Btn_CadastroFuncionario.Text = "Fazer cadastro como funcionario";
-            this.Btn_CadastroFuncionario.UseVisualStyleBackColor = true;
-            this.Btn_CadastroFuncionario.Click += new System.EventHandler(this.Btn_CadastroFuncionario_Click);
             // 
             // Pcb_Olho
             // 
@@ -148,7 +136,6 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(334, 337);
             this.Controls.Add(this.Pcb_Olho);
-            this.Controls.Add(this.Btn_CadastroFuncionario);
             this.Controls.Add(this.Btn_CadastroCliente);
             this.Controls.Add(this.Btn_Adiministrador);
             this.Controls.Add(this.Btn_LoginFuncionario);
@@ -175,7 +162,6 @@
         private Button Btn_LoginFuncionario;
         private Button Btn_Adiministrador;
         private Button Btn_CadastroCliente;
-        private Button Btn_CadastroFuncionario;
         private PictureBox Pcb_Olho;
     }
 }
