@@ -49,6 +49,7 @@
             this.Txt_BuscarClinte = new System.Windows.Forms.TextBox();
             this.Lbl_Clientes = new System.Windows.Forms.Label();
             this.Dgv_ListarCliente = new System.Windows.Forms.DataGridView();
+            this.Btn_LocarCarro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_ListarVeiculos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ListarCliente)).BeginInit();
             this.SuspendLayout();
@@ -91,7 +92,6 @@
             this.Lbl_ModeloDoCarro.Size = new System.Drawing.Size(19, 15);
             this.Lbl_ModeloDoCarro.TabIndex = 23;
             this.Lbl_ModeloDoCarro.Text = "....";
-            //this.Lbl_ModeloDoCarro.Click += new System.EventHandler(this.Lbl_ModeloDoCarro_Click);
             // 
             // Lbl_PlacaDoCarro
             // 
@@ -252,11 +252,21 @@
             this.Dgv_ListarCliente.TabIndex = 33;
             this.Dgv_ListarCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_ListarCliente_CellContentClick);
             // 
+            // Btn_LocarCarro
+            // 
+            this.Btn_LocarCarro.Location = new System.Drawing.Point(104, 516);
+            this.Btn_LocarCarro.Name = "Btn_LocarCarro";
+            this.Btn_LocarCarro.Size = new System.Drawing.Size(129, 25);
+            this.Btn_LocarCarro.TabIndex = 34;
+            this.Btn_LocarCarro.Text = "Locar Carro";
+            this.Btn_LocarCarro.UseVisualStyleBackColor = true;
+            // 
             // Frm_PrincipalAdm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 553);
+            this.Controls.Add(this.Btn_LocarCarro);
             this.Controls.Add(this.Dgv_ListarCliente);
             this.Controls.Add(this.Btn_AlterarClientes);
             this.Controls.Add(this.Lbl_Telefone);
@@ -311,5 +321,6 @@
         private TextBox Txt_BuscarClinte;
         private Label Lbl_Clientes;
         private DataGridView Dgv_ListarCliente;
+        private Button Btn_LocarCarro;
     }
 }

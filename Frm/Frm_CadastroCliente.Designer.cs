@@ -296,6 +296,7 @@
             this.Controls.Add(this.Txt_Sobrenome);
             this.Name = "Frm_CadastroCliente";
             this.Text = "Cadastrar Cliente";
+            this.Load += new System.EventHandler(this.Frm_CadastroCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pcb_Olho)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

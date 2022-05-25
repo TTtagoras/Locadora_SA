@@ -47,6 +47,7 @@
             this.Txt_BuscarCarro = new System.Windows.Forms.TextBox();
             this.Lbl_BuscarCarro = new System.Windows.Forms.Label();
             this.Btn_CadastrarCarro = new System.Windows.Forms.Button();
+            this.Btn_LocarCarro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_ListarCliente)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_ListarVeiculos)).BeginInit();
             this.SuspendLayout();
@@ -230,11 +231,21 @@
             this.Btn_CadastrarCarro.UseVisualStyleBackColor = true;
             this.Btn_CadastrarCarro.Click += new System.EventHandler(this.Btn_CadastrarCarro_Click);
             // 
+            // Btn_LocarCarro
+            // 
+            this.Btn_LocarCarro.Location = new System.Drawing.Point(376, 527);
+            this.Btn_LocarCarro.Name = "Btn_LocarCarro";
+            this.Btn_LocarCarro.Size = new System.Drawing.Size(129, 25);
+            this.Btn_LocarCarro.TabIndex = 55;
+            this.Btn_LocarCarro.Text = "Locar Carro";
+            this.Btn_LocarCarro.UseVisualStyleBackColor = true;
+            // 
             // Frm_PrincipalFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 569);
+            this.Controls.Add(this.Btn_LocarCarro);
             this.Controls.Add(this.Dgv_ListarCliente);
             this.Controls.Add(this.Btn_AlterarClientes);
             this.Controls.Add(this.Lbl_Telefone);
@@ -285,5 +296,6 @@
         private TextBox Txt_BuscarCarro;
         private Label Lbl_BuscarCarro;
         private Button Btn_CadastrarCarro;
+        private Button Btn_LocarCarro;
     }
 }

@@ -162,5 +162,10 @@ namespace LocadoraSA.Frm
             //lista.listarClientes();
             salvarRegistro();
         }
+
+        private void Frm_CadastroCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
