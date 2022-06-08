@@ -199,5 +199,11 @@ namespace LocadoraSA.Frm
                 form.Show();
             }
         }
+
+        private void Btn_LocarCarro_Click(object sender, EventArgs e)
+        {
+            Frm_CadastroLocações locacao = new Frm_CadastroLocações();
+            locacao.Show();
+        }
     }
 }

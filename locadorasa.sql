@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 25-Maio-2022 às 14:04
+-- Generation Time: 01-Jun-2022 às 14:22
 -- Versão do servidor: 5.6.20-log
 -- PHP Version: 5.4.31
 
@@ -108,8 +108,20 @@ CREATE TABLE IF NOT EXISTS `locados` (
   `CPF` varchar(150) NOT NULL,
   `Placa` varchar(150) NOT NULL,
   `DataLocacao` varchar(150) NOT NULL,
-  `DataDevolucao` varchar(150) NOT NULL
+  `DataDevolucao` varchar(150) NOT NULL,
+  `KmInicial` varchar(150) NOT NULL,
+  `KmFinal` varchar(150) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `locados`
+--
+
+INSERT INTO `locados` (`CPF`, `Placa`, `DataLocacao`, `DataDevolucao`, `KmInicial`, `KmFinal`) VALUES
+('000.000.000-00', '00', '00', '00', '00', '00'),
+('000.000.000-00', '11', '00  ', ' 00', '00', '00'),
+('000.000.000-00', '32', '0000000000', '00', '00', '00'),
+('555.555.555-55', '22', '2222222', '22222222', '222', '222');
 
 -- --------------------------------------------------------
 
@@ -140,11 +152,11 @@ CREATE TABLE IF NOT EXISTS `veiculos` (
 --
 
 INSERT INTO `veiculos` (`Tamanho`, `Categoria`, `Cilindradas`, `GPS`, `TelaLcd`, `Fabricante`, `Modelo`, `Ano`, `PainelDigital`, `Cambio`, `Combustivel`, `DatadeFabricação`, `ValorCompra`, `Placa`, `locado`) VALUES
-('00', '00', '00', '00', '00', '000', '00', '00', '00', '0', '0', '0', '0', '0', ''),
-('00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', ''),
-('11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', ''),
-('22', '22', '22', '22', '22', '2', '22', '22', '22', '22', '22', '22', '22', '22', ''),
-('32', 'bom', '8000', 'sim', 'sim', 'hotwheels', 'sedam', '1500', 'sim', 'automatico', 'gasosa', '1498', '32,65', 'jhg7895', '');
+('00', '00', '00', '00', '00', '000', '00', '00', '00', '0', '0', '0', '0', '0', 's'),
+('00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', '00', 's'),
+('11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', '11', 'N'),
+('22', '22', '22', '22', '22', '2', '22', '22', '22', '22', '22', '22', '22', '22', 'S'),
+('32', 'bom', '8000', 'sim', 'sim', 'hotwheels', 'sedam', '1500', 'sim', 'automatico', 'gasosa', '1498', '32,65', 'jhg7895', 's');
 
 --
 -- Indexes for dumped tables

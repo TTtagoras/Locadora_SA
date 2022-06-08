@@ -239,6 +239,7 @@
             this.Btn_LocarCarro.TabIndex = 55;
             this.Btn_LocarCarro.Text = "Locar Carro";
             this.Btn_LocarCarro.UseVisualStyleBackColor = true;
+            this.Btn_LocarCarro.Click += new System.EventHandler(this.Btn_LocarCarro_Click);
             // 
             // Frm_PrincipalFuncionario
             // 

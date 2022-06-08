@@ -111,6 +111,7 @@
             this.DataGrid_ListarVeiculos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrid_ListarVeiculos.Size = new System.Drawing.Size(776, 141);
             this.DataGrid_ListarVeiculos.TabIndex = 21;
+            this.DataGrid_ListarVeiculos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrid_ListarVeiculos_CellContentClick);
             // 
             // Btn_AtualizarCarro
             // 
@@ -260,6 +261,7 @@
             this.Btn_LocarCarro.TabIndex = 34;
             this.Btn_LocarCarro.Text = "Locar Carro";
             this.Btn_LocarCarro.UseVisualStyleBackColor = true;
+            this.Btn_LocarCarro.Click += new System.EventHandler(this.Btn_LocarCarro_Click);
             // 
             // Frm_PrincipalAdm
             // 
